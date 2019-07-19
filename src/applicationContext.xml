@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd 
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+	">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/xiancai?useUnicode=true&amp;characterEncoding=UTF-8">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="213546"></property>
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/entity/Admin.hbm.xml</value>
+				<value>com/entity/Message.hbm.xml</value>
+				<value>com/entity/Greatform.hbm.xml</value>
+				<value>com/entity/Goodstore.hbm.xml</value>
+				<value>com/entity/Goodcollection.hbm.xml</value>
+				<value>com/entity/Orderform.hbm.xml</value>
+				<value>com/entity/Goods.hbm.xml</value>
+				<value>com/entity/Users.hbm.xml</value>
+				<value>com/entity/Browsinghistory.hbm.xml</value>
+				<value>com/entity/Storeconcern.hbm.xml</value>
+				<value>com/entity/Evaluateform.hbm.xml</value>
+				<value>com/entity/Refurdform.hbm.xml</value>
+				<value>com/entity/Shoppingcart.hbm.xml</value></list>
+		</property></bean>
+		
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	 <tx:advice id="txAdvice" transaction-manager="transactionManager">
+	   <tx:attributes>
+	   <tx:method name="*" propagation="REQUIRED"/>
+	   </tx:attributes>
+	   </tx:advice>
+	   
+	    <aop:config>
+	   <aop:pointcut expression="execution(* com.service.*.*(..))" id="serviceMethods"/>
+	   <aop:advisor advice-ref="txAdvice"  pointcut-ref="serviceMethods"/>
+	   </aop:config>
+	
+	
+	
+	<bean id="adminDao" class="com.dao.AdminDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		
+		<bean id="adminService" class="com.service.AdminServiceImpl">
+		<property name="adminDao" ref="adminDao"></property>
+		</bean>
+		
+		<bean id="loginAction" class="com.action.admin.loginAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="adminAction" class="com.action.admin.adminAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="messageAction" class="com.action.admin.messageAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="usermanageAction" class="com.action.admin.usermanageAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="shenheAction" class="com.action.admin.shenheAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="xiajiaAction" class="com.action.admin.xiajiaAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		<bean id="tuikuanAction" class="com.action.admin.tuikuanAction" scope="prototype">
+		<property name="adminService" ref="adminService"></property>
+		</bean>
+		
+		
+	</beans>

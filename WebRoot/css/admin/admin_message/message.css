@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+	background-color: #efefef;
+	min-height: 830px;
+	min-width: 1200px;
+}
+.shenhe_top {
+    background-color: #efefef;
+    height: 38px;
+    width: 100%;
+	
+}
+.shenhe_top .top_menu {
+	margin-right: 80px;
+}
+
+.shenhe_top .top_menu li {
+	float: right;
+	list-style-type: none;
+	padding-top: 10px;
+	padding-right: 20px;
+	color: #ff3366;
+	
+}
+.shenhe_top .top_menu li a {
+	 color: #ff3366;
+     text-decoration: none;
+}
+.shenhe_mid {
+    height: 180px;
+    width: 100%;
+	background-color: #ffffff;
+}.shenhe_mid .mid_one {
+	height: 51px;
+	width: 160px;
+	padding-top: 60px;
+	padding-left: 180px;
+}
+.shenhe_bottom {
+  height: 550px;
+  width: 85%;
+	margin:auto;
+	margin-top:25px;
+	text-align: center;	
+	background-color: #ffffff;
+	box-shadow: rgb(68, 67, 67) 0px 0px 10px;
+}
+
+
+
+
+.shenhe_bottom .shenhe_left {
+	background-color: #FF3366;
+	float: left;
+	height: 550px;
+	width: 20%;
+}
+.shenhe_bottom .shenhe_right {
+	background-color: #FFFFFF;
+	float: left;
+	height: 550px;
+	width: 80%;
+}
+
+
+.shenhe_bottom .shenhe_left .head {
+	text-align: center;
+	height: 80px;
+	width: 80px;
+	overflow:hidden;
+	margin:auto;
+	margin-top:20px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.shenhe_bottom .shenhe_left .name {
+	color: #FFF;
+	margin-top: 10px;
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu {
+	margin-top:10px;
+	
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu li {
+	color: #FFF;
+	list-style-type: none;
+	padding-top:40px;
+	
+}
+
+.shenhe_bottom .shenhe_left .chuli .left_menu li a {
+	color: #FFF;
+	text-decoration: none;
+	text-shadow: rgb(235, 248, 179) 0px 0px 5px;
+	
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu li a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: '»ªÎÄçúçê';
+	font-weight: bold;
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu {
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+.shenhe_bottom .shenhe_right .top {
+background-color: #FFFFFF;
+height:66px;
+border-bottom-width: thin;
+border-bottom-style: double;
+border-bottom-color: #FF3366;
+}
+.xitongxiaoxi{
+	margin:auto;
+	height:66px;
+	width:195px;
+}
+.sousuo{
+	margin:auto;
+	width: 130px;
+	padding-top: 22px;
+	text-decoration:none;
+	text-shadow: rgb(247, 140, 172) 0px 0px 8px;
+	float: left;
+}
+.xiaoxione{ 
+	 text-decoration:none;
+	  color:#FF3366;
+		display:block;
+		z-index: 9999;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+.xiaoxidisplay a{
+    margin-top:5px;
+	  text-decoration:none;
+	  color:#FF3366;
+		display:block;
+		z-index: 9999;
+		background-color: rgb(235, 232, 232);
+}
+.xiaoxidisplay a:hover{
+	color :#FF3366; 
+	background-color: rgb(184, 189, 189);
+}
+.xiaoxidisplay{
+	float: right;
+	display: none;
+}
+
+ul{ list-style:none;}
+.shenhe_bottom .shenhe_right .bottom {
+	border-bottom-width: thin;
+	border-bottom-style: double;
+	border-bottom-color: #FF3366;
+	height: 410px;
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li {
+	border-width: thin;
+	border-style: solid;
+	border-color: #FF3366;
+	height:80px;
+	list-style-type: none;
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .left {
+	height: 60px;
+	width: 60px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	overflow:hidden;
+	border-radius:50%;
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li  span{
+	color :#FF3366; 
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .mid {
+	width: 600px;
+	margin-left: 140px;
+	height: 80px;
+	float: none;
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .mid .name {
+	height: 25px;
+	padding-top: 15px;
+	
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .mid .message {
+	padding-top: 7px;
+	height: 33px;
+	float: left;
+}
+
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .mid .message h4 {
+	float: left;
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .mid .name h4 {
+	float: left;
+}
+.shenhe_bottom .shenhe_right .bottom .xiaoxi li .right {
+	float: right;
+	width: 300px;
+	height: 30px;
+	padding-top: 30px;
+	
+}
+.shenhe_bottom .shenhe_right .fenye {
+	font-size:14px;
+	margin-top: 7px;
+	color: #FF3366;
+}
+

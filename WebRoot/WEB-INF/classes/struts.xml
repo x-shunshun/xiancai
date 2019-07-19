@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="utf-8"></constant>
+<package name="default" extends="struts-default">
+      <action name="doLogin" class="com.action.admin.loginAction">
+          <result name="error">/admin_jsp/adminlogin.jsp</result>
+          <result name="success">/admin_jsp/adminMain.jsp</result>
+      </action>
+      <action name="admin" class="com.action.admin.loginAction" method="select">
+              <result name="success">/admin_jsp/adminMain.jsp</result>
+       </action>
+      <!-- 管理员 -->
+      <action name="doSelectById" class="com.action.admin.adminAction" method="selectById">
+          <result name="success">/admin_jsp/admin_bianji.jsp</result>
+      </action>
+      
+      <action name="doUpdate" class="com.action.admin.adminAction" method="update">
+          <result name="success">/admin_jsp/admin_bianji.jsp</result>
+      </action>
+      
+      <action name="doInsert" class="com.action.admin.adminAction" method="insert">
+          <result name="success">/admin_jsp/admin_bianji.jsp</result>
+          <interceptor-ref name="fileUpload">
+					<param name="maximumSize">5000000</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+      </action>
+      
+       <!-- 消息 -->
+        <action name="selectMessage" class="com.action.admin.messageAction" method="selectAll">
+          <result name="success">/admin_jsp/admin_message.jsp</result>
+      </action>
+      <action name="selectshenheMessage" class="com.action.admin.messageAction" method="selectshenhe">
+          <result name="success">/admin_jsp/admin_message.jsp</result>
+      </action>
+      <action name="selecttuikuanMessage" class="com.action.admin.messageAction" method="selecttuikuan">
+          <result name="success">/admin_jsp/admin_message.jsp</result>
+      </action>
+      <action name="selectxiajiaMessage" class="com.action.admin.messageAction" method="selectxiajia">
+          <result name="success">/admin_jsp/admin_message.jsp</result>
+      </action>
+      
+      
+      <!-- 用户管理 -->
+      <action name="selectAllUser" class="com.action.admin.usermanageAction" method="selectAllUser">
+          <result name="success">/admin_jsp/admin_usermanage.jsp</result>
+      </action>
+      <action name="userDelete" class="com.action.admin.usermanageAction" method="userDelete">
+          <result name="success">/admin_jsp/admin_usermanage.jsp</result>
+      </action>
+      
+      <!-- 审核 -->
+      
+      <action name="selectGood1" class="com.action.admin.shenheAction" method="selectGood1">
+          <result name="success">/admin_jsp/admin_shenhe.jsp</result>
+      </action>
+      <action name="selectGood2" class="com.action.admin.shenheAction" method="selectGood2">
+          <result name="success">/admin_jsp/admin_shenhe.jsp</result>
+      </action>
+      <action name="updateGood" class="com.action.admin.shenheAction" method="updateGood">
+          <result name="success">/admin_jsp/admin_shenhe.jsp</result>
+      </action>
+      <action name="updateGood2" class="com.action.admin.shenheAction" method="updateGood2">
+          <result name="success">/admin_jsp/admin_shenhe.jsp</result>
+      </action>
+      
+      
+      
+      <!-- 下架 -->
+       <action name="selectGood4" class="com.action.admin.xiajiaAction" method="selectGood2">
+          <result name="success">/admin_jsp/admin_xiajia.jsp</result>
+      </action>
+      <action name="selectGood3" class="com.action.admin.xiajiaAction" method="selectGood3">
+          <result name="success">/admin_jsp/admin_xiajia.jsp</result>
+      </action>
+      <action name="updateGood1" class="com.action.admin.xiajiaAction" method="updateGood">
+          <result name="success">/admin_jsp/admin_xiajia.jsp</result>
+      </action>
+      
+      <!-- 退款 -->
+       <action name="selecttuikuan1" class="com.action.admin.tuikuanAction" method="selectRefurdform1">
+          <result name="success">/admin_jsp/admin_tuikuan.jsp</result>
+      </action>
+       <action name="selecttuikuan2" class="com.action.admin.tuikuanAction" method="selectRefurdform2">
+          <result name="success">/admin_jsp/admin_tuikuan.jsp</result>
+      </action>
+       <action name="aggretuikuan" class="com.action.admin.tuikuanAction" method="aggretuikuan">
+          <result name="success">/admin_jsp/admin_tuikuan.jsp</result>
+      </action>
+       <action name="disaggretuikuan" class="com.action.admin.tuikuanAction" method="disaggretuikuan">
+          <result name="success">/admin_jsp/admin_tuikuan.jsp</result>
+      </action>
+      
+      
+      
+       <action name="selectonegood" class="com.action.admin.shenheAction" method="selectonegood">
+          <result name="success">/admin_jsp/shop_GoodMessage.jsp</result>
+      </action>
+       
+</package>
+
+
+</struts>    

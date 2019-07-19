@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+	}
+body{
+	width:100%;
+	height:100%;
+	}
+.admin{
+	text-align:center;
+	padding-top: 150px;
+	padding-right: 200px;
+	padding-left: 200px;
+	}
+.adminLogin_top{
+	margin: auto;
+	padding-top: 40px;
+	}
+.adminLogin_center {
+	height: 140px;
+	padding-top: 35px;
+	text-align:center
+}
+.adminLogin_bottom{
+	padding-top: 10px;
+	margin: auto;
+	}
+
+#admin #adminLogin_center h3 {
+	color: #FF3366;
+	
+}
+.adminLogin {
+	background-color: #efefef;
+	margin: auto;
+	margin-top: 180px;
+	width: 600px;
+	text-align: center;
+	height: 400px;
+    box-shadow: 0px 0px 10px rgb(88, 88, 88);
+}
+.adminLogin #adminLogin_bottom .sub {
+	border-radius: 10px;
+	outline: none;
+	border:0px;
+	height: 25px;
+	width: 283px;
+}
+.adminname{
+	width:250px;
+	height: 30px;
+	border:1px solid rgb(83, 82, 82);
+	padding: 6px 9px;
+	outline: none;
+	border-radius:5px;
+	font-size: 14px;
+	
+}
+.adminpassword{
+	width:250px;
+	height: 30px;
+	border:1px solid rgb(83, 82, 82);
+	padding: 6px 9px;
+	outline: none;
+	border-radius:5px;
+	font-size: 14px;
+	
+}

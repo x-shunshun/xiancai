@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+	background-color: #efefef;
+	min-height: 830px;
+}
+.shenhe_top {
+    background-color: #efefef;
+    height: 38px;
+    width: 100%;
+	
+}
+.shenhe_top .top_menu {
+	margin-right: 80px;
+}
+
+.shenhe_top .top_menu li {
+	float: right;
+	list-style-type: none;
+	padding-top: 10px;
+	padding-right: 20px;
+	color: #ff3366;
+	
+}
+.shenhe_top .top_menu li a {
+	 color: #ff3366;
+     text-decoration: none;
+}
+.shenhe_mid {
+    height: 180px;
+    width: 100%;
+	background-color: #ffffff;
+}.shenhe_mid .mid_one {
+	height: 51px;
+	width: 160px;
+	padding-top: 60px;
+	padding-left: 180px;
+}
+.shenhe_bottom {
+    height: 550px;
+    width: 90%;
+	margin:auto;
+	margin-top:25px;
+	text-align: center;	
+	background-color: #ffffff;
+	 width: 85%;
+	 box-shadow: rgb(68, 67, 67) 0px 0px 10px;
+}
+
+
+
+
+.shenhe_bottom .shenhe_left {
+	background-color: #FF3366;
+	float: left;
+	height: 550px;
+	width: 20%;
+}
+.shenhe_bottom .shenhe_right {
+	background-color: #FFFFFF;
+	float: left;
+	height: 550px;
+	width: 80%;
+}
+
+
+.shenhe_bottom .shenhe_left .head {
+	text-align: center;
+	height: 80px;
+	width: 80px;
+	overflow:hidden;
+	border-radius:50%;
+	margin:auto;
+	margin-top:20px;
+}
+.shenhe_bottom .shenhe_left .name {
+	color: #FFF;
+	margin-top: 10px;
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu {
+	margin-top:10px;
+	
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu li {
+	color: #FFF;
+	list-style-type: none;
+	padding-top:40px;
+	
+}
+
+.shenhe_bottom .shenhe_left .chuli .left_menu li a {
+	color: #FFF;
+	text-decoration: none;
+	text-shadow: rgb(235, 248, 179) 0px 0px 5px;
+	
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu li a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: '»ªÎÄçúçê';
+	font-weight: bold;
+}
+.shenhe_bottom .shenhe_left .chuli .left_menu {
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+.shenhe_bottom .shenhe_right .userManage {
+	border-bottom-width: thin;
+	border-bottom-style: double;
+	border-bottom-color: #FF3366;
+	color: #FF3366;
+	text-align: center;
+	margin-top: 22px;
+	padding-bottom: 22px;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: rgb(247, 140, 172) 0px 0px 8px;
+}
+
+.shenhe_bottom .shenhe_right .manage {
+	border-bottom-width: thin;
+	border-bottom-style: double;
+	border-bottom-color: #FF3366;
+	height: 410px;
+}
+.shenhe_bottom .shenhe_right .manage ul li {
+	height: 80px;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border: thin solid #FF3366;
+}
+.shenhe_bottom .shenhe_right .manage ul li .left {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	height: 60px;
+	width: 60px;
+	overflow:hidden;
+	border-radius:50%;
+}
+.shenhe_bottom .shenhe_right .manage ul li .mid {
+	margin-left: 140px;
+	height: 80px;
+	width: 600px;
+}
+.shenhe_bottom .shenhe_right .manage ul li .right {
+	float: right;
+	height: 80px;
+	width: 150px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCC;
+}
+.shenhe_bottom .shenhe_right .manage ul li .right .sub {
+	margin-top: 25px;
+	border:0px;
+	height: 25px;
+	width: 89px;
+	outline:none;
+}
+.shenhe_bottom .shenhe_right .manage ul li .mid .top {
+	height: 25px;
+	padding-top: 15px;
+}
+.shenhe_bottom .shenhe_right .manage ul li .mid .bottom {
+	height: 2px;
+	padding-bottom: 15px;
+	float: left;
+	font-size: 18px;
+}
+
+.shenhe_bottom .shenhe_right .manage ul li .mid .top a {
+	font-size: 18px;
+	color: #000;
+	float: left;
+	text-decoration: none;
+}
+
+.shenhe_bottom .shenhe_right .fenye {
+	font-size:14px;
+	margin-top: 7px;
+	color: #FF3366;
+}
+
+#modlue{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:350px;
+	height:180px;  
+	margin-left:-200px;
+	margin-top:-150px;
+	visibility:hidden;
+	background-color:#fff;
+	z-index:100;
+	border:1px solid #FF3366;
+	overflow: hidden;
+	display: none;
+	border-radius: 10px;
+}
+	.MyContent{
+		width:100%;
+		height:64%;
+		background-color:white;
+		color: #FF3366;
+		text-align: center;
+		margin-top: 5px;
+	}
+	.h3_xiajia{
+		padding-top: 40px;
+		text-shadow: rgb(247, 140, 172) 0px 0px 8px;
+	}
+	#cancleBtn{
+		float:right;
+		margin-right:6%;
+		width:125px;
+		height:42px;border:0px;
+		outline: none;
+		border:0px;
+	}
+	#confirm{
+		float:left;
+		margin-left:6%;
+		width: 125px;
+		height: 41px;
+		border:0px;
+		outline: none;
+	}
+	#infoMesg p{
+		margin:4px 15px;
+	}
+

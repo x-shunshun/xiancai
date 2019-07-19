@@ -1,0 +1,309 @@
+
+*{
+	margin:0px;
+	padding:0px;
+
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    min-width:1300px;
+}
+a {
+    text-decoration: none;
+}
+.top {
+    background-color: #FFF;
+    height: 38px;
+    width: 100%;
+}
+.top #site-nav {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+.top .sn-quick-menu {
+    color: #ff3366;
+	margin-top:8px;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    height: 26px;
+    line-height: 26px;
+
+}
+.top .sn-quick-menu li {
+    margin-right: 38px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.top .sn-quick-menu li a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+
+.mid {
+	background-color: #efefef;
+	heigth:200px;
+    width: 100%;}
+.cui_hd {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+}
+.cui_hd .ctriplogo {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    margin: 28px 0;
+    overflow: hidden;
+}
+.cui_hd .ctriplogo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../../image/shop/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.cui_hd .cui_search {
+    position: absolute;
+    top: 36px;
+    left: 260px;
+    z-index: 10;
+    width: 28%;
+	margin: 10px 0;
+    font-family: "Microsoft Yahei", Tahoma;
+}
+
+.cui_hd .cui_search input[type="text"] {
+    border-radius: 10px;
+	
+}
+.cui_hd .cui_search input {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: 40px;
+    padding: 0 45px 0 5px;
+    line-height: 28px;
+    font-size: 19px;
+    font-family:"Microsoft Yahei", Tahoma;
+	color:#c3c0c0;
+    border: 1px solid #ff3366;
+    outline: 0 none;
+}
+
+
+.cui_hd .cui_search button {
+    position: absolute;
+    top: 1px;
+    right: -492px;
+    width: 100%;
+    height: 41px;
+    cursor: pointer;
+    border: 0 none;   
+    border-radius: 0;
+    background:url(../../image/shop/soulogo.png) no-repeat;
+}
+.cui_hd .nav-shop {
+    width: 190px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+    top: 34px;
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    padding: 10px 20px 0px 16px;
+}
+.sell-contanier { 
+	width:100%;
+    margin-top:40px;
+	height:50px;    
+	}
+	
+.sell-contanier #sell-center{  
+    margin-left:25%;		
+	
+	}
+.sell-contanier #wantbuy{
+	width:35%;
+	height:40px;		
+	float:left;
+	
+}
+.sell-contanier #wantsell{
+	width:65%;
+	height:40px;	
+	float:right;
+}
+.sell-contanier #want-buy {
+	  color:#FFF;
+	  background-color:#fe6d6d;
+	  font-family:"Arial Black", Gadget, sans-serif;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fe6d6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */
+	}
+
+.sell-contanier #want-sell {
+	  color:#FFF;
+	  background-color:#fece6d;
+	  font-family:"Microsoft Yahei", Tahoma;
+	  width:260px; 
+	  height:40px;
+      border: 1px solid #fece6d;
+      -moz-border-radius: 15px;      /* Gecko browsers */
+      -webkit-border-radius: 15px;   /* Webkit browsers */
+      border-radius:15px;            /* W3C syntax */   
+}
+/*ÏÂ²¿*/
+.bottom{
+    margin:30px 100px 0 100px;
+    height:480px;
+    border: 1px solid #fece6d;
+}
+.left{
+	float:left;
+	position:relative;
+	top:20px;
+	left:20px;
+	height:450px;
+	
+	width:40%;
+	 
+}
+.left img {
+	height:87%;
+	width : 87%;
+	padding:30px 0 0 30px;
+}
+.right{
+	float:right;
+	position:relative;
+	top:20px;
+	right:20px;
+	height:450px;
+	
+	width:50%;
+
+	
+}
+.miaoshu{
+	
+	height:40px;
+	width:90%;
+	poisition :absolute;
+	margin-top:20px;
+	margin-left:5%;
+	line-height:40px;
+}
+.miaoshu_child{
+	margin-left:25px;;
+}
+.price{
+	
+	height:70px;
+	width:90%;
+	poisition :absolute;
+	margin-top:10px;
+	margin-left:5%;
+	background-color:#efefef;
+	
+	line-height:70px;
+}
+.price .price_child1{
+	margin-left:25px;
+	font-size:20px;
+	width:70px;
+}
+.price .price_child2{
+	margin-left:30px;
+	font-size:34px;
+	color:#FF3366;
+}
+.transport{
+	
+	height:40px;
+	width:90%;
+	poisition :absolute;
+	margin-top:10px;
+	margin-left:5%;	
+	line-height:40px;
+}
+.transport_child1{
+	margin-left:25px;
+	font-size:20px;
+	width:40px;
+}
+.transport_child2{
+	margin-left:15px;
+	font-size:20px;
+	color:#FF3366;
+}
+.content{
+	border:1px solid black;
+	height:100px;
+	width:90%;
+	poisition :absolute;
+	margin-top:10px;
+	margin-left:5%;	
+}
+.content_child{
+	height:80%;
+	width:90%;
+	margin-top:10px;
+	margin-left:5%;	
+}
+.num{
+	
+	height:40px;
+	width:90%;
+	poisition :absolute;
+	margin-top:10px;
+	margin-left:5%;	
+	line-height:40px;
+}
+.num_child1{
+	margin-left:25px;
+	font-size:20px;
+	width:40px;
+}
+.num_child2{
+	margin-left:15px;
+	font-size:20px;
+	color:#FF3366;
+}
+.button{
+	
+	height:60px;
+	width:90%;
+	poisition :absolute;
+	margin-top:10px;
+	margin-left:5%;	
+}
+
+.buy{
+	float:left;
+	margin-top:10px;
+	margin-left:50px;
+}
+.no{
+	float:right;
+	margin-top:10px;
+	margin-right:50px;
+}
